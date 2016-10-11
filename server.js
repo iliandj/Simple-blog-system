@@ -1,11 +1,11 @@
 let http = require('http')
-let handlers = require('./handlers/handlers')
+let handlers = require('./handlers/handlers.js')
 
 let port = process.env.port || 9876
 
 http
   .createServer((req, res) => {
-    for (let handler in handlers) {
+    for (let handler of handlers) {
       let next = handler(req, res)
       if (!next) {
         break
