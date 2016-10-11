@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engine": "6.6.0",
   "description": "Simple Blog System",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/iliandj/Simple-blog-system#readme",
   "dependencies": {
+    "ejs-locals": "^1.0.2",
     "standard": "^8.4.0"
   }
 }

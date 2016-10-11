@@ -1,0 +1,14 @@
+<!-- views/partials/main.ejs -->
+
+<% articles.forEach(function(article){ %>
+  <article>
+    <header>
+      <h1><%= article.title %></h1>
+      <p>Published: <time><%= article.time %></time></p>
+    </header>
+    <% if (user.image) { %>
+      <img src="<%= user.image.url %>" alt="<%= user.image.name %>">
+    <% } %>
+    <p><%= article.description%></p>
+  </article>
+<% }); %>
